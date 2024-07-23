@@ -34,9 +34,10 @@ class _TimeTabsState extends State<TimeTabs>
           margin: const EdgeInsets.only(bottom: 20.0),
           padding: const EdgeInsets.all(5.3),
           decoration: BoxDecoration(
-              color: const Color(0xfff2f2f2),
-              borderRadius: BorderRadius.circular(20.0)),
-          height: 40.0,
+            color: const Color(0xfff2f2f2),
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          height: 42.0,
           child: TabBar(
             controller: _tabController,
             labelColor: Colors.black,

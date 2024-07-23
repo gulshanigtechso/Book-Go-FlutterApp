@@ -44,13 +44,15 @@ class BookingBox extends StatelessWidget {
 
   Widget _timeButton() {
     return Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
+      height: 150,
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
       clipBehavior: Clip.hardEdge,
-      child: Wrap(
-        alignment: WrapAlignment.start,
-        runAlignment: WrapAlignment.start,
-        spacing: 8.0,
-        runSpacing: 0.0,
+      child: GridView.count(
+        crossAxisCount: 4,
+        crossAxisSpacing: 3.0,
+        mainAxisSpacing: 3.0,
+        shrinkWrap: true,
+        childAspectRatio: 1.75,
         children: List.generate(11, (int index) => const TimeButton()),
       ),
     );
